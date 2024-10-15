@@ -35,7 +35,7 @@ function MovieList({ genereId, index_ }) {
       scroll-smooth pt-5 px-3 pb-5'>
         {movieList.map((item, index) => (
           <>
-            {index_ % 3 == 0 && index_ > 0 ? <HrMovieCard movie={item} /> : <MovieCard movie={item} />}
+            {index_ % 3 == 0 ? <HrMovieCard movie={item} /> : <MovieCard movie={item} />}
           </>
         ))}
       </div>

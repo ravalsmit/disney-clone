@@ -41,7 +41,7 @@ function Header() {
           <div className='flex items-center justify-between p-5'>
                <div className='flex  gap-8 items-center'>
                     <img src={logo} className='w-[80px] 
-                    md:w-[115px] object-cover' />
+                    md:w-[115px] object-cover cursor-pointer' />
                     <div className='hidden md:flex gap-8'>
                          {menu.map((item) => (
                               <HeaderItem name={item.name} Icon={item.icon} />
@@ -63,7 +63,7 @@ function Header() {
                     </div>
                </div>
                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
-                    className='w-[40px] rounded-full' />
+                    className='w-[40px] rounded-full cursor-pointer' />
           </div>
      )
 }

@@ -27,10 +27,10 @@ function Slider() {
      return (
           <div>
                <HiChevronLeft className="hidden md:block text-white text-[30px] 
-               absolute mx-8 mt-[150px] cursor-pointer "
+               absolute mx-8 mt-[200px] cursor-pointer "
                     onClick={() => sliderLeft(elementRef.current)} />
                <HiChevronRight className='hidden md:block text-white text-[30px] 
-               absolute mx-8 mt-[150px] cursor-pointer right-0'
+               absolute mx-8 mt-[200px] cursor-pointer right-0'
                     onClick={() => sliderRight(elementRef.current)} />
 
 
@@ -38,7 +38,7 @@ function Slider() {
                scrollbar-hide scroll-smooth' ref={elementRef}>
                     {movieList.map((item) => (
                          <img src={IMAGE_BASE_URL + item.backdrop_path}
-                              className='min-w-full  md:h-[310px] object-cover
+                              className='min-w-full  md:h-[400px] object-cover
                               object-left-top mr-5 rounded-md hover:border-[4px]
                               shadow-black shadow-md border-gray-400 transition-all 
                               duration-100 ease-in'/>
